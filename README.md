@@ -1,11 +1,10 @@
-# rust-http-proxy
-A http proxy demo written with Rust/Tokio. 
+# Tokio Proxy
+This project demonstrates a basic HTTP proxy built with Rust and the Tokio framework.
 
-Released in public domain as an example for Rust/Tokio.
+**Self-Signed Certificate Generation**
 
-## HTTPS Keygen
-`keygen.sh` is used to generated a self-signed SSL certificate for HTTPS
-proxy services. Simply runs it to generate a new cert. 
+Utilize the `keygen.sh` script to generate a self-signed SSL certificate for secure proxy operations. Execution of this script produces a new certificate.
 
-Testing it with `curl --insecure`, otherwise, the connection will be rejected
-because self-signed certificates are not recognized by most clients.
+**Verification**
+
+When testing, use the `--insecure` flag with `curl`. Without this flag, connections may be rejected as the self-signed certificate isn't recognized by most clients.
